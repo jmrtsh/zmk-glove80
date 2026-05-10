@@ -39,6 +39,8 @@
         };
 
         HRM_BEHAVIORS
+
+        NAV_LAYER_STICKY_SHIFT_BEHAVIOR
     };
 
     macros {
@@ -102,14 +104,14 @@
             // TODO make umlaut lt use hrm config, but with momentary layer instead of kp of course
 
             bindings = <
-            &kp GRAVE      &kp F2   &kp F3      &kp F4      &kp F5                                                                                         &kp F8  &kp F9      &kp F10      &kp F11      &kp F12
-            &kp EQUAL      &kp N1   &kp N2      &kp N3      &kp N4      &kp N5                                                                     &kp N6  &kp N7  &kp N8      &kp N9      &kp N0      &kp MINUS
-            &kp TAB        &kp Q    &kp W       &kp E       &kp R       &kp T                                                                      &kp Y   &kp U   &kp I       &kp O       &kp P       &kp BSLH
+            &kp GRAVE      &kp F2   &kp F3      &kp F4      &kp F5                                                                                                         &kp F8  &kp F9      &kp F10      &kp F11      &kp F12
+            &kp EQUAL      &kp N1   &kp N2      &kp N3      &kp N4      &kp N5                                                                                     &kp N6  &kp N7  &kp N8      &kp N9      &kp N0      &kp MINUS
+            &kp TAB        &kp Q    &kp W       &kp E       &kp R       &kp T                                                                                      &kp Y   &kp U   &kp I       &kp O       &kp P       &kp BSLH
 
             DEFAULT_HOME_ROW_MAP
 
-            &kp LSHIFT     &kp Z    &kp X       &kp C       &kp V       &kp B   &kp BSPC    &kp DEL     &layer_td  &kp LGUI   &kp RCTRL &kp SPACE  &kp N   &kp M   &kp COMMA   &kp DOT     &kp FSLH    &kp PG_UP
-            &magic MAGIC 0 &none    &kp LGUI    &kp LALT    &none               &mo NAV     &kp DEL     &kp LALT   &caps_word &mo MAGIC &kp RET            &none   &kp LBKT    &kp RBKT    &none       &kp PG_DN
+            &kp LSHIFT     &kp Z    &kp X       &kp C       &kp V       &kp B   &kp BSPC                    &kp DEL     &layer_td  &kp LGUI   &kp RCTRL &kp SPACE  &kp N   &kp M   &kp COMMA   &kp DOT     &kp FSLH    &kp PG_UP
+            &magic MAGIC 0 &none    &kp LGUI    &kp LALT    &none               &nav_sticky_shift NAV LSHFT &kp DEL     &kp LALT   &caps_word &mo MAGIC &kp RET            &none   &kp LBKT    &kp RBKT    &none       &kp PG_DN
             >;
         };
 
