@@ -34,7 +34,7 @@ jobs:
         run: |
           # Copy all regular files from the parent (zmk-stuff) into config/shared/
           # This handles shared.h, or any future .dtsi/.h files you add.
-          mkdir -p config/shared \;
+          mkdir -p config/shared
           find .. -maxdepth 1 -type f -exec cp {} config/shared/ \;
       - name: Build Glove80 combined firmware
         run: nix-build config -o combined
