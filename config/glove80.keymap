@@ -41,6 +41,8 @@
         HRM_BEHAVIORS
 
         NAV_LAYER_STICKY_SHIFT_BEHAVIOR
+
+        HOME_ROW_LAYER_TAP_BEHAVIOR
     };
 
     macros {
